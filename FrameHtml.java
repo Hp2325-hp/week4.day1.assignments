@@ -34,7 +34,7 @@ public class FrameHtml {
 		driver.findElement(By.tagName("button")).click();
 		//take screenshot and store
 		File f = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-	    FileUtils.copyFile(f, new File("C:\\Users\\PC\\Pictures\\screenshot01.png"));
+	    FileUtils.copyFile(f, new File("./Snaps/Screenshot.png"));
 	    System.out.println("Screenshot is taken");
 	    //moving back to main window
 	    driver.switchTo().defaultContent();
